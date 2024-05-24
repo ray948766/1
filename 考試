@@ -1,0 +1,48 @@
+#問題1
+for i in range(5):#重複五次
+    print("*+"*10)#*+順序的符號
+    print("+*"*10)#+*順序的符號
+#問題2
+number = int(input(""))#輸入第一列的正數字 n，用來表示報名的隊伍數量，及接下來共有 n 列
+res = 0 #歸零合格隊伍的數量
+
+for i in range(number):#重複n次
+    member = int(input(""))#輸入隊伍人數
+    if member % 3 == 0 and member > 0:#如果隊伍人數除以3的餘數是零
+        res = res + 1#合格隊伍數量+1
+print(res)#輸出合格隊伍人數
+#問題3
+#Markdown是一種輕量級標記語言，用於將文本格式化為HTML。它使用簡單的標記來指示文本的樣式和結構，比如使用#來表示標題，*或_來表示斜體或加粗等。
+
+# 自我介绍
+
+## 姓名：
+陳柏叡
+
+## 職業：
+學生
+
+## 技能：
+- **打嘴砲
+- **讀書
+- **打籃球
+
+#問題4
+
+import random
+x1 = 1 
+x2 = 100 
+n = 0 
+a = random.randint(x1,x2) 
+while True: 
+    answer = int(input()) 
+    if answer == a: 
+        print("正確") 
+        print("已經猜了",n,"次")
+        break 
+    elif answer < a: 
+        print("太低了") 
+        n = n+1 
+    elif answer > a: 
+        print("太高了") 
+        n = n+1
